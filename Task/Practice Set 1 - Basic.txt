@@ -1,0 +1,180 @@
+==========================================================
+        MySQL PRACTICE TASK - 1 Basics
+   Topics: DDL | DML | DCL | TCL | Operators & Clauses
+==========================================================
+
+DDL (Data Definition Language) 
+----------------------------------------------------------
+1. Create a database named "company_db".
+2. Create a table "departments" with columns: dept_id (INT, PRIMARY KEY), 
+   dept_name (VARCHAR), location (VARCHAR).
+3. Create a table "employees" with columns: emp_id (INT, PRIMARY KEY), 
+   emp_name (VARCHAR), dept_id (INT, FOREIGN KEY references departments), 
+   salary (DECIMAL), hire_date (DATE), gender (CHAR), email (VARCHAR, UNIQUE).
+4. Alter the "employees" table to add a new column "phone_number" (VARCHAR).
+5. Alter the "employees" table to modify the "salary" column's data type to DECIMAL(10,2).
+6. Rename the column "phone_number" to "contact_number" in the "employees" table.
+7. Drop the "contact_number" column from the "employees" table.
+8. Alter the "employees" table to add a UNIQUE constraint on the "email" column 
+   (if not already unique).
+9. Truncate the "departments" table (remove all rows, keep structure).
+10. Drop the "departments" table completely.
+
+
+DML (Data Manipulation Language) 
+----------------------------------------------------------
+11. Insert 5 sample records into the "departments" table.
+12. Insert 10 sample records into the "employees" table 
+    (with varied salaries, genders, and hire dates).
+13. Update the salary of employee with emp_id = 3 to 55000.
+14. Update the dept_id of all employees whose current dept_id is 2 to 4.
+15. Delete the employee record where emp_id = 10.
+16. Delete all employees who were hired before '2015-01-01'.
+17. Insert a new department record using a single INSERT statement with 
+    multiple value sets (bulk insert of 3 rows).
+18. Update all employees' salary by increasing it by 10% where department is 'Sales'.
+19. Delete records from "employees" where email is NULL.
+20. Insert data into "employees" by selecting data from another table 
+    named "temp_employees" (INSERT INTO ... SELECT).
+
+
+DCL (Data Control Language)
+----------------------------------------------------------
+21. Create a new MySQL user named 'hr_user' with password 'Hr@1234'.
+22. Grant SELECT and INSERT privileges on "company_db.employees" to 'hr_user'.
+23. Grant ALL PRIVILEGES on "company_db" database to a user 'admin_user'.
+24. Revoke the INSERT privilege on "employees" table from 'hr_user'.
+25. Show all grants assigned to 'hr_user'.
+26. Revoke all privileges from 'admin_user' on "company_db".
+27. Create a user 'readonly_user' and grant only SELECT privilege on all tables 
+    in "company_db".
+28. Drop the user 'hr_user' from MySQL.
+
+
+
+TCL (Transaction Control Language)
+----------------------------------------------------------
+29. Start a transaction, insert a new employee record, and COMMIT the transaction.
+30. Start a transaction, update an employee's salary, then ROLLBACK the change.
+31. Set a SAVEPOINT named "sp1" after inserting a record, then insert another 
+    record, and ROLLBACK TO "sp1".
+32. Demonstrate the use of "SET autocommit = 0" and explain its effect.
+33. Perform a transaction that deletes a department only if it has no employees, 
+    then COMMIT.
+34. Release a previously created SAVEPOINT named "sp1".
+35. Write a transaction block that updates two employees' salaries and 
+    COMMITs only if both updates succeed.
+
+
+
+Operators 
+----------------------------------------------------------
+36. Retrieve all employees whose salary is greater than 50000 AND department 
+    is 'IT' (use logical AND operator).
+37. Retrieve all employees whose department is either 'Sales' OR 'Marketing' 
+    (use logical OR operator).
+38. Retrieve all employees whose salary is BETWEEN 30000 AND 60000.
+39. Retrieve all employees whose emp_name starts with 'A' (use LIKE operator).
+40. Retrieve all employees whose dept_id is IN (1, 3, 5).
+41. Retrieve all employees whose email is NOT NULL (use IS NOT NULL operator).
+42. Retrieve all employees whose salary is NOT BETWEEN 20000 AND 40000 
+    (use NOT operator).
+
+
+Clauses
+----------------------------------------------------------
+43. Retrieve all employees ordered by salary in descending order (ORDER BY clause).
+44. Retrieve the count of employees in each department (GROUP BY clause).
+45. Retrieve departments having more than 5 employees (GROUP BY with HAVING clause).
+46. Retrieve only the top 5 highest paid employees (LIMIT clause).
+47. Retrieve employee names along with their department names 
+    (JOIN clause - INNER JOIN).
+48. Retrieve all employees along with department names, including employees 
+    with no assigned department (LEFT JOIN clause).
+49. Retrieve employee data WHERE salary > 40000 AND hire_date is in year 2020 
+    (combine WHERE clause with multiple conditions).
+50. Retrieve distinct department IDs from the employees table (DISTINCT clause).
+
+
+
+DDL 
+----------------------------------------------------------
+51. Create a table "projects" with columns: project_id (INT, PRIMARY KEY, 
+    AUTO_INCREMENT), project_name (VARCHAR NOT NULL), budget (DECIMAL DEFAULT 0).
+52. Alter the "employees" table to add a CHECK constraint ensuring salary 
+    is greater than 0.
+53. Alter the "employees" table to add a DEFAULT value of 'Unassigned' 
+    for the dept_id column (assume dept_id is changed to VARCHAR for this).
+54. Create a table "employee_backup" as a copy of the structure and data 
+    of "employees" using CREATE TABLE ... AS SELECT.
+55. Alter the "projects" table to drop the DEFAULT constraint on "budget".
+56. Create a composite primary key on a new table "emp_projects" using 
+    columns emp_id and project_id together.
+
+DML 
+----------------------------------------------------------
+57. Insert a record into "employees" using only some columns 
+    (leave optional columns to take their default/NULL values).
+58. Update multiple columns (salary and dept_id) of a single employee 
+    in one UPDATE statement.
+59. Delete all employees whose salary is 0 or NULL.
+60. Insert a new record into "projects" with only the required (NOT NULL) 
+    columns filled in, letting the rest take their default values.
+61. Update all employees' salary by adding a flat bonus of 2000 using the 
+    "+" operator directly inside the UPDATE statement.
+62. Replace an existing employee record using REPLACE INTO 
+    (based on a duplicate primary key).
+
+
+
+DCL 
+----------------------------------------------------------
+63. Create a user 'auditor' who can connect only from 'localhost' and 
+    grant SELECT privilege on all tables in "company_db".
+64. Grant UPDATE privilege on only the "salary" column of "employees" 
+    to 'hr_user'.
+65. Grant DELETE privilege on the "employees" table to 'hr_user'.
+66. Use FLUSH PRIVILEGES after modifying user permissions and explain why 
+    it is needed.
+67. Check which privileges the currently logged-in user has using 
+    SHOW GRANTS FOR CURRENT_USER().
+
+
+TCL 
+----------------------------------------------------------
+68. Demonstrate the difference between COMMIT and ROLLBACK by running 
+    two separate transactions with the same UPDATE statement.
+69. Write a transaction that updates an employee's salary and department 
+    in two separate UPDATE statements, then COMMIT both changes together.
+70. Create two SAVEPOINTs ("sp1" and "sp2") within one transaction and 
+    ROLLBACK only to "sp2".
+71. Write a transaction that inserts a new department and a new employee 
+    in that department, committing only if both succeed (simulate an 
+    all-or-nothing transfer).
+72. Explain and demonstrate what happens to uncommitted changes when 
+    a MySQL session ends unexpectedly (before COMMIT).
+
+
+Operators 
+----------------------------------------------------------
+73. Retrieve all employees whose emp_name contains the letter 'a' 
+    anywhere in the name (use LIKE with wildcard on both sides).
+74. Retrieve all employees whose salary is exactly 50000 OR exactly 
+    75000 (use the = operator combined with OR, then rewrite using IN).
+75. Retrieve all employees whose dept_id is NOT IN (2, 4) 
+    (use NOT IN operator).
+76. Retrieve all employees whose salary is NOT equal to 50000 
+    (use the <> or != operator).
+
+Clauses 
+----------------------------------------------------------
+77. Retrieve the average salary of employees in each department using 
+    GROUP BY along with the AVG() function.
+78. Retrieve the 2nd highest-paid employee from the "employees" table 
+    using LIMIT with OFFSET.
+79. Retrieve all employees whose dept_id is NULL, and sort the result 
+    by hire_date (WHERE clause combined with ORDER BY).
+80. Retrieve all employees sorted first by dept_id (ascending) and then 
+    by salary (descending) — ORDER BY with multiple columns.
+
+
