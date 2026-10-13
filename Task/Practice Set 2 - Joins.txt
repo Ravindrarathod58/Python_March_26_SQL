@@ -1,0 +1,402 @@
+==========================================================
+     
+ MySQL PRACTICE TASK - Joins
+
+----------------------------------------------------------
+SAMPLE DATABASE SETUP
+----------------------------------------------------------
+
+CREATE DATABASE join_practice_db;
+USE join_practice_db;
+
+-- 1) DEPARTMENTS
+CREATE TABLE departments (
+    dept_id   INT PRIMARY KEY,
+    dept_name VARCHAR(50),
+    location  VARCHAR(50)
+);
+
+INSERT INTO departments VALUES
+(1, 'HR', 'New York'),
+(2, 'IT', 'San Francisco'),
+(3, 'Sales', 'Chicago'),
+(4, 'Marketing', 'Boston'),
+(5, 'Finance', 'Seattle');
+
+-- 2) EMPLOYEES  (dept_id / manager_id can be NULL)
+CREATE TABLE employees (
+    emp_id     INT PRIMARY KEY,
+    emp_name   VARCHAR(50),
+    dept_id    INT,
+    manager_id INT,
+    salary     DECIMAL(10,2),
+    hire_date  DATE,
+    FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+);
+
+INSERT INTO employees VALUES
+(1, 'John Smith',      2, NULL, 75000, '2019-03-15'),
+(2, 'Emma Davis',      2, 1,    65000, '2020-06-01'),
+(3, 'Michael Brown',   3, NULL, 60000, '2018-11-20'),
+(4, 'Sarah Wilson',    3, 3,    55000, '2021-01-10'),
+(5, 'David Lee',       1, NULL, 50000, '2017-05-30'),
+(6, 'Laura Taylor',    1, 5,    48000, '2022-02-14'),
+(7, 'James Anderson',  4, NULL, 62000, '2019-09-05'),
+(8, 'Olivia Martinez', 4, 7,    58000, '2020-12-01'),
+(9, 'Robert Thomas',   NULL, NULL, 45000, '2023-04-18'),
+(10,'Sophia White',    5, NULL, 70000, '2016-07-22');
+
+-- 3) PROJECTS  (one project has NO department assigned)
+CREATE TABLE projects (
+    project_id   INT PRIMARY KEY,
+    project_name VARCHAR(50),
+    dept_id      INT,
+    FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+);
+
+INSERT INTO projects VALUES
+(101, 'Website Redesign',   2),
+(102, 'Mobile App',         2),
+(103, 'Sales Campaign',     3),
+(104, 'Ad Campaign',        4),
+(105, 'Recruitment Drive',  1),
+(106, 'Budget Planning',    5),
+(107, 'Cloud Migration',    NULL);
+
+-- 4) EMPLOYEE_PROJECTS  (junction/bridge table)
+CREATE TABLE employee_projects (
+    emp_id       INT,
+    project_id   INT,
+    hours_worked INT,
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id),
+    FOREIGN KEY (project_id) REFERENCES projects(project_id)
+);
+
+INSERT INTO employee_projects VALUES
+(1, 101, 120),
+(1, 102, 80),
+(2, 101, 100),
+(3, 103, 150),
+(4, 103, 90),
+(7, 104, 110),
+(8, 104, 95),
+(5, 105, 60),
+(10, 106, 70);
+
+-- 5) CUSTOMERS  (one customer has NO orders)
+CREATE TABLE customers (
+    customer_id   INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    city          VARCHAR(50)
+);
+
+INSERT INTO customers VALUES
+(201, 'Alpha Corp', 'New York'),
+(202, 'Beta Ltd',   'Chicago'),
+(203, 'Gamma Inc',  'Boston'),
+(204, 'Delta LLC',  'Seattle'),
+(205, 'Epsilon Co', 'Miami');
+
+-- 6) ORDERS  (one order has NO matching customer)
+CREATE TABLE orders (
+    order_id    INT PRIMARY KEY,
+    customer_id INT,
+    order_date  DATE,
+    amount      DECIMAL(10,2)
+);
+
+INSERT INTO orders VALUES
+(301, 201, '2023-01-15', 2500),
+(302, 202, '2023-02-10', 1800),
+(303, 201, '2023-03-05', 3200),
+(304, 203, '2023-04-20', 1500),
+(305, 204, '2023-05-11', 2200),
+(306, NULL,'2023-06-01', 900);
+
+
+INNER JOIN 
+==========================================================
+1.  Retrieve emp_name and dept_name for all employees using an INNER JOIN 
+    between employees and departments.
+2.  Retrieve emp_name, salary, and dept_name only for employees earning 
+    more than 55000.
+3.  Retrieve emp_name, dept_name, location, and project_name for employees 
+    working in 'Chicago' who are also assigned to a project (join employees, 
+    departments, employee_projects, and projects — 4 tables).
+4.  Retrieve project_name along with the department name it belongs to.
+5.  Retrieve emp_name, project_name, and hours_worked using an INNER JOIN 
+    between employees, employee_projects, and projects (3-table join).
+6.  Retrieve customer_name and order_date for all customers who have 
+    placed an order.
+7.  Retrieve customer_name and total amount for each order placed, 
+    sorted by amount descending.
+8.  Retrieve emp_name and dept_name for employees hired after '2019-01-01'.
+
+10. Retrieve emp_name and project_name for employees who worked more 
+    than 90 hours on any project.
+11. Retrieve emp_name, dept_name, and salary using INNER JOIN, ordered 
+    by salary in descending order.
+12. Retrieve the count of employees in each department using INNER JOIN 
+    with GROUP BY.
+13. Retrieve customer_name, order_id, and amount for orders greater 
+    than 2000.
+14. Retrieve emp_name and project_name for employees in the 'IT' department 
+    who are also working on a project.
+15. Retrieve emp_name, dept_name, location, and project_name for employees 
+    in 'San Francisco' or 'Boston' who are working on a project (join 
+    employees, departments, employee_projects, and projects — 4 tables).
+16. Retrieve project_name and dept_name using INNER JOIN, then filter 
+    where dept_name is 'Sales'.
+17. Retrieve emp_name and hours_worked for employees who worked on 
+    project_id 101.
+18. Retrieve the total hours_worked per employee (emp_name) using 
+    INNER JOIN with SUM() and GROUP BY.
+19. Retrieve customer_name and order_date for orders placed in 
+    March 2023.
+20. Retrieve emp_name, dept_name, and project_name for every employee 
+    who is linked to both a department and a project (join all four 
+    tables: employees, departments, employee_projects, projects).
+
+
+
+LEFT JOIN (LEFT OUTER JOIN)
+==========================================================
+21. Retrieve all employees along with their department name, including 
+    employees who are not assigned to any department.
+22. Retrieve all projects along with their department name and total hours 
+    logged on them, including projects with no department and/or no hours 
+    logged (LEFT JOIN across projects, departments, and employee_projects 
+    — 3 tables).
+23. Identify which employees have NO department using LEFT JOIN and 
+    WHERE dept_id IS NULL.
+24. Identify which projects have NO department using LEFT JOIN and 
+    WHERE dept_id IS NULL.
+25. Retrieve all customers along with their orders, including customers 
+    who have never placed an order.
+26. Identify customers who have never placed an order (LEFT JOIN + 
+    IS NULL check).
+27. Retrieve all employees along with their department name and the 
+    projects they are working on, including employees with no department 
+    and/or no project (LEFT JOIN across employees, departments, 
+    employee_projects, and projects — 4 tables).
+28. Identify employees who are not working on any project 
+    (LEFT JOIN + IS NULL check).
+29. Retrieve all departments along with their employees, including 
+    departments that currently have no employees.
+30. Identify departments that have no employees using LEFT JOIN.
+31. Retrieve all departments along with their projects, including 
+    departments with no projects.
+32. Identify departments that have no projects assigned.
+33. Retrieve emp_name, dept_name, and project_name for all employees, 
+    showing 'No Department' and 'No Project' (use IFNULL/COALESCE) 
+    instead of NULL where missing (LEFT JOIN across employees, 
+    departments, employee_projects, and projects — 4 tables).
+34. Retrieve customer_name and total order amount per customer 
+    (including customers with zero orders shown as 0) using LEFT JOIN, 
+    SUM(), and COALESCE/IFNULL.
+35. Retrieve all employees with their manager's name using a LEFT JOIN 
+    (some employees have no manager).
+36. Retrieve emp_name and count of projects assigned to each employee, 
+    including employees with zero projects (LEFT JOIN + COUNT + GROUP BY).
+37. Retrieve all orders along with customer_name, including any order 
+    that has no matching customer.
+38. Identify orders that do not have a matching customer_id in the 
+    customers table (LEFT JOIN + IS NULL check).
+39. Retrieve dept_name and the number of projects in each department, 
+    including departments with zero projects (LEFT JOIN + COUNT + 
+    GROUP BY).
+40. Retrieve emp_name, dept_name, and project_name for all employees 
+    (left-joined to departments and projects) so that every employee 
+    appears at least once, even without a department or project.
+
+
+
+RIGHT JOIN (RIGHT OUTER JOIN) 
+==========================================================
+41. Retrieve all departments along with their employees using RIGHT JOIN 
+    (employees table on the right), including departments with no 
+    employees.
+42. Retrieve all departments along with their projects using RIGHT JOIN, 
+    including departments with no projects.
+43. Retrieve all orders along with customer details using RIGHT JOIN 
+    (orders table on the right), including orders with no matching 
+    customer.
+44. Identify orders with no matching customer using RIGHT JOIN and 
+    WHERE customer_id IS NULL.
+45. Retrieve all projects along with their department name and the 
+    employees assigned to them using RIGHT JOIN, including projects with 
+    no employees and/or no department (join departments, projects, 
+    employee_projects, and employees — 4 tables).
+46. Identify projects that have no employees working on them 
+    (RIGHT JOIN + IS NULL check).
+47. Rewrite Question 21 (all employees with department names) using 
+    RIGHT JOIN instead of LEFT JOIN, keeping the same result.
+48. Rewrite Question 25 (all customers with their orders) using 
+    RIGHT JOIN instead of LEFT JOIN.
+49. Retrieve dept_name and emp_name for every department, using RIGHT 
+    JOIN so that departments with no employees still appear.
+50. Retrieve project_name and dept_name for every department, using 
+    RIGHT JOIN so that departments with no projects still appear.
+51. Retrieve customer_name and order_id for every order using RIGHT 
+    JOIN, sorted by order_date ascending.
+52. Retrieve emp_name and project_name for every project using RIGHT 
+    JOIN, including projects with zero employees.
+53. Retrieve count of employees per department using RIGHT JOIN and 
+    GROUP BY, ensuring departments with 0 employees show a count of 0.
+54. Retrieve count of orders per customer using RIGHT JOIN (customers 
+    on the right) and GROUP BY, ensuring customers with 0 orders show 
+    a count of 0.
+55. Explain (in a comment) why RIGHT JOIN queries 41-46 could each be 
+    rewritten as an equivalent LEFT JOIN, and rewrite Question 45 as 
+    a LEFT JOIN to prove it produces the same result.
+
+
+
+
+SELF JOIN
+==========================================================
+56. Retrieve emp_name along with their manager's name using a SELF JOIN 
+    on the employees table (via manager_id).
+57. Retrieve only those employees who have a manager assigned 
+    (SELF JOIN, manager_id IS NOT NULL).
+58. Retrieve employees who do NOT have a manager assigned using a 
+    SELF JOIN with a LEFT JOIN variant.
+59. Retrieve pairs of employees who work in the same department, along 
+    with the department name, using a SELF JOIN on employees (matching 
+    dept_id, excluding an employee pairing with themselves) combined 
+    with a JOIN to departments — 3 tables total.
+60. Retrieve pairs of employees who have the same salary 
+    (SELF JOIN on salary, excluding self-pairs and duplicate pairs).
+61. Retrieve manager_name and the number of employees reporting to 
+    each manager (SELF JOIN + COUNT + GROUP BY).
+62. Retrieve employee pairs where one employee earns more than another 
+    within the same department (SELF JOIN with a salary comparison).
+63. Retrieve emp_name and manager_name for employees hired after their 
+    manager was hired (SELF JOIN with a hire_date comparison).
+64. Retrieve dept_name along with manager_name for each department's 
+    manager, by joining employees (self join) with departments.
+65. List every employee alongside every other employee in the SAME 
+    department, showing both names side by side (SELF JOIN, dept_id 
+    match, emp_id not equal).
+
+
+
+
+CROSS JOIN — Q66 to Q75
+==========================================================
+66. Retrieve every possible combination of employee and department 
+    names using CROSS JOIN (Cartesian product).
+67. Count the total number of rows returned by a CROSS JOIN between 
+    employees and departments, and verify it equals 
+    (number of employees x number of departments).
+68. Retrieve every possible combination of department and project 
+    names using CROSS JOIN.
+69. Retrieve every possible combination of customer and order using 
+    CROSS JOIN, and compare the row count to an INNER JOIN on the 
+    same tables.
+70. Use CROSS JOIN to generate all possible (dept_name, project_name) 
+    pairs, then filter using WHERE to show only pairs where the 
+    department does NOT actually have that project (to find "missing" 
+    combinations).
+71. Retrieve all possible pairings of employees from the 'IT' department 
+    with employees from the 'Sales' department using CROSS JOIN with 
+    a WHERE filter on dept_name.
+72. Retrieve a Cartesian product of departments and a fixed list of 
+    quarters ('Q1','Q2','Q3','Q4') to prepare a quarterly planning 
+    template (CROSS JOIN with a derived list).
+73. Explain (in a comment) the difference in output between 
+    CROSS JOIN and INNER JOIN ... ON when applied to the same two 
+    tables without any filtering condition.
+74. Retrieve all combinations of emp_name and project_name using 
+    CROSS JOIN, then filter to show only combinations where the 
+    employee is NOT currently assigned to that project.
+75. Write a CROSS JOIN query between departments and departments 
+    itself (self cross join) to list every possible pair of two 
+    different department names.
+
+
+
+
+FULL JOIN (simulated using LEFT JOIN + RIGHT JOIN) 
+          
+   Note: MySQL has no native FULL JOIN keyword; combine a LEFT JOIN 
+   and a RIGHT JOIN result using UNION to simulate it.
+==========================================================
+76. Simulate a FULL JOIN between employees and departments so that 
+    every employee AND every department appears, matched where 
+    possible.
+77. Simulate a FULL JOIN between projects and departments so unmatched 
+    projects and unmatched departments both appear in the result.
+78. Simulate a FULL JOIN between customers and orders so both 
+    customers without orders and orders without customers appear.
+79. Simulate a FULL JOIN across employees, employee_projects, and 
+    projects (3 tables) so both employees without projects and projects 
+    without employees appear, also pulling in dept_name via an 
+    additional JOIN to departments.
+80. Using the simulated FULL JOIN from Question 76, filter the result 
+    to show only the rows where either emp_id or dept_id is NULL 
+    (the "unmatched" rows on either side).
+81. Using the simulated FULL JOIN from Question 77, count how many 
+    departments have no project AND how many projects have no 
+    department, in one result set.
+82. Simulate a FULL JOIN between departments and projects, then use 
+    COALESCE to display 'No Project' or 'No Department' instead of 
+    NULL values.
+83. Simulate a FULL JOIN between customers and orders, then calculate 
+    total order amount per customer including customers with zero 
+    orders (showing 0 instead of NULL).
+84. Explain (in a comment) why UNION (not UNION ALL) is used when 
+    simulating a FULL JOIN, and what would go wrong if UNION ALL 
+    were used instead.
+85. Simulate a FULL JOIN between employees and departments, then 
+    sort the combined result by dept_name, placing unmatched employees 
+    (NULL dept_name) at the end.
+
+
+
+
+Multi-Table JOINs, USING, NATURAL JOIN & 
+           JOINs with GROUP BY/Aggregates 
+==========================================================
+86. Rewrite Question 1 (employees + departments INNER JOIN) using the 
+    USING(dept_id) syntax instead of ON.
+87. Rewrite Question 4 (projects + departments) using NATURAL JOIN, 
+    and explain (in a comment) why this works given the shared 
+    column name dept_id.
+88. Retrieve emp_name, dept_name, project_name, and hours_worked by 
+    joining all four tables: employees, departments, employee_projects, 
+    and projects, filtered to only the 'IT' department.
+89. Retrieve dept_name and total salary paid to employees in each 
+    department, using JOIN + SUM() + GROUP BY.
+90. Retrieve dept_name and average salary of employees in each 
+    department, using JOIN + AVG() + GROUP BY, showing only departments 
+    with average salary above 50000 (JOIN + GROUP BY + HAVING).
+91. Retrieve emp_name and total hours worked across all their projects, 
+    using JOIN + SUM() + GROUP BY, sorted by total hours descending.
+92. Retrieve customer_name and number of orders placed by each 
+    customer, using JOIN + COUNT() + GROUP BY, including customers 
+    with zero orders.
+93. Retrieve dept_name, count of employees, and count of projects for 
+    each department using two separate JOINs combined with GROUP BY.
+94. Retrieve the employee(s) with the highest salary in each department 
+    using JOIN + GROUP BY + MAX() (department-wise highest salary).
+95. Retrieve project_name, dept_name, and the number of employees 
+    working on each project using JOIN + COUNT() + GROUP BY.
+96. Retrieve emp_name, manager_name, dept_name, and project_name in a 
+    single query combining a SELF JOIN (for manager) with JOINs to 
+    departments and projects.
+97. Retrieve customer_name, total number of orders, and total amount 
+    spent, sorted by total amount spent descending, using JOIN + 
+    COUNT() + SUM() + GROUP BY.
+98. Retrieve dept_name along with a comma-separated list of employee 
+    names in that department using JOIN + GROUP_CONCAT() + GROUP BY.
+99. Retrieve all employees, their department, their manager, and every 
+    project they work on in one combined result set (join employees, 
+    departments, a self join for manager, employee_projects, and 
+    projects — five-table join).
+100. Retrieve dept_name, total employees, total projects, and total 
+     salary expenditure for each department in a single summary query, 
+     combining multiple JOINs with GROUP BY (a final department-wise 
+     summary report).
+
+=
