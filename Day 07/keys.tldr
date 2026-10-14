@@ -1,0 +1,3267 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 5,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 26,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.user": 1,
+			"com.tldraw.asset.image": 6,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 4,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 5,
+			"com.tldraw.shape.geo": 12,
+			"com.tldraw.shape.note": 13,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 1,
+			"com.tldraw.shape.arrow": 8,
+			"com.tldraw.shape.highlight": 4,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 5,
+			"com.tldraw.shape.video": 4,
+			"com.tldraw.binding.arrow": 1
+		}
+	},
+	"records": [
+		{
+			"x": 0,
+			"y": 0,
+			"lastActivityTimestamp": 0,
+			"meta": {},
+			"id": "pointer:pointer",
+			"typeName": "pointer"
+		},
+		{
+			"name": "",
+			"color": "#11B3A3",
+			"imageUrl": "",
+			"meta": {},
+			"id": "user:MEJG2aV6nRKibh79bkN9q",
+			"typeName": "user"
+		},
+		{
+			"x": 206.0100102233887,
+			"y": 2013.1125729141236,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:EYdIzWSsNSfEoxz_5yEX9",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1247.2000732421875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "if we dont want to allow the same student can join the same course multiple times then we have to make both"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "foreign key column as composite primary key"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aex5E",
+			"typeName": "shape"
+		},
+		{
+			"x": 500.14222641361613,
+			"y": 2821.906809712389,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OnO8bMneodUZlk3Dbtd7T",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 16,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "*"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ajfKb",
+			"typeName": "shape"
+		},
+		{
+			"x": 333.2100524902344,
+			"y": 288.1500244140625,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:21Jo6pYe3_jjafGRwbyC7",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADaxc2wzcSuO8PFrjvDxQAAw8WuP7jGrjvDwa4/rsOuP8PBrj+uv64/rr+uO66/rj+uuwAAAACuP667rjuuu64/rruuO667rjuuu8NBrruuO667rj+uu647rrvDQa67rj8AAK47rrvDQQAAw0Guu8NBAACuPwAAw0EAAMNBrjuuPwAAw0GuO8NBAACuOwAAw0EAAK4/rj/DQa47rjuuO8NBw0GuP65Dw0GuQ64/w0GuO65Drj+uQ647rkOuP65DrjvNRK47zUQAAFJIAACuRwAAuEYAAM1IrrtSSMPBUkiuu65Hw8FSSMPBrkfDwc1Err9SSMPBw0Wuw8NFrsPDQcPBw0Guv647rruuOwAArjuuuwAArruuO667AACuu647rrsAAK67AACuvwAArruuu8PBrr/Dwa67zcTDwc3Err+uw67DzcTDwcPFw8HNxM3Ew8XNxMPBrr/Dwc3Err+uw66/rr+uu8PBrrvDwQAAw8EAAK6/AADDwQAAw8GuO66/AADDwa47rsOuO66/AACuv647w8GuO66/AADDwa47rsMAAMPBrjvDwa47rr8AAK6/AACuv64/rrsAAK6/rjuuv647rruuO667AACuuwAAAACuOw==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "a8bDI",
+			"typeName": "shape"
+		},
+		{
+			"x": 180.09000631713872,
+			"y": 1381.9125648880008,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:R9UKQoy-KWrMtbVYS2Ra3",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 819.6400146484375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Composite keys "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\ta combination of two or more columns is called as the composite key"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aUYYU",
+			"typeName": "shape"
+		},
+		{
+			"x": 914.9700927734375,
+			"y": 282.3900146484375,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:psS09SrU286Xwe9V_n9uy",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADaxc2wzciuO8PJrjuux647UsiuO1LIw0Gux64/uMauP67Hrj+uw64/rsOuO67Drjuuw64/rruuO66/rj+uv647rruuOwAArjuuu64/rruuP667rjsAAK4/AADDQQAAw0EAAMNBAADDQQAAw0GuO65DAADDQa47w0GuO64/rjvDQa4/w0GuO647rjuuP64/rj/DQa47rkOuP81Erju4Rq47UkgAAK5HrjvNSAAAw0kAALhKw8E9Sq6/w0muw8NJrsNIScPFSEmuwz1KrsfNSM3Ew0XNxLhGrsOuQ8PBw0Guv64/rr+uP667rjuuvwAArr+uO667rjuuuwAArruuO667AACuvwAAw8EAAK6/AADDwQAArsOuu8PBrrvNxK6/zcTDwa7Hrr/NxK7Dw8XDwa7DrsOuw83Ew8HNxK6/w8Wuu8PBrrvDwQAArsMAAMPBrjuuw647rsOuP67Dw0HDwa4/rsPDQcPBrj+uv65Dw8HDQcPBrkPDxc1ErsOuQ83EzUSuv65Dw8HDRQ==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": true,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aC4ab",
+			"typeName": "shape"
+		},
+		{
+			"x": 49.260993744395506,
+			"y": -3460.3118205905166,
+			"z": 0.9150281685278245,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"meta": {},
+			"id": "binding:mcz89B4Iu8cncgQyYocRK",
+			"type": "arrow",
+			"fromId": "shape:tNsSkrzYkN4P8eOcJ2qPs",
+			"toId": "shape:OSStnkJZ2j2uALjeApbrd",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 206.01000747680655,
+			"y": 968.6325420303355,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:H8P_G5yRt7B7f0TZ-Qt8u",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1343.2750244140625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "if a single attribute is enough to identify the records then if the composite key found that cannot be considered as the "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "candidate key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "primary key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tMinimal candidate key which unique and not null"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "the primary key is alone enough to identify the records "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "if we choose one primary key from the candidate keys then we can say the remaining candidate keys are the "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "alternate keys"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aOskr",
+			"typeName": "shape"
+		},
+		{
+			"x": 1039.2900395202637,
+			"y": 1825.912560707092,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ot1jHDO4HSRlIj4uXLcwm",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 266.8000183105469,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "composite primary key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "adDSj",
+			"typeName": "shape"
+		},
+		{
+			"x": 206.01000448608403,
+			"y": 1320.232531150818,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:bNGESz041BV89IfZfVZwY",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 821.2750244140625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "alternate keys are also unique and can be helpful to identify the records"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aTDRv",
+			"typeName": "shape"
+		},
+		{
+			"x": 219.77729343933802,
+			"y": 3571.1521370190753,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Jd5yhPTcVcgrbE-meA3Ib",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1498.60009765625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "orderedList",
+							"attrs": {
+								"dir": "auto",
+								"start": 3,
+								"type": null
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "partial dependency"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\twhen a part of the composite can identify the other attributes then we can sat"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tit is a partial dependecy"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\twe can resolve this dependency in 2NF"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tThe part of the composite key is enough to identify the non key attribute (s_id, c_id) c_id → course"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "atNeM",
+			"typeName": "shape"
+		},
+		{
+			"x": 264.6095826464906,
+			"y": 2836.1199310985776,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:d5PTe8phz5N2LQG2BtiBz",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 226.5273664021592,
+					"y": 3.429277233898574
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aiIL2",
+			"typeName": "shape"
+		},
+		{
+			"x": 167.13002014160156,
+			"y": 909.0300602569582,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Q8OzRMqevgIeHeFHb6Ekg",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADDrXG8rjsAAK4/AADDQQAArjsAAMNBAADDQQAAw0EAAMNBAACuQwAAw0GuO64/AACuP647w0EAAK47AACuOwAArj8AAK47AACuOwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aMS9A",
+			"typeName": "shape"
+		},
+		{
+			"x": 483.19102265413017,
+			"y": 2881.8436459523136,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ppBCVDBxGOh1r7JUz_66k",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -218.66509163773526,
+					"y": 0.7527654063396767
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "akhCn",
+			"typeName": "shape"
+		},
+		{
+			"x": 226.1835574847385,
+			"y": 3443.6271316850575,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:MDIZGY8bo3rh3YR6cNntz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1210.60009765625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "orderedList",
+							"attrs": {
+								"dir": "auto",
+								"start": 2,
+								"type": null
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "full functional dependency "
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\twhen a composite key is used to identify the other attributes when the non key key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\tattribute depends on the whole composite key not the part."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "asDVQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 195.93002319335938,
+			"y": 289.4325227737427,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:VC3sH2kygV0mjOlEuWhN9",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 761.2300415039062,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no      name            email            mobile            course        course_id"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a4elj",
+			"typeName": "shape"
+		},
+		{
+			"x": 236.25001525878906,
+			"y": 274.71002197265625,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:5kv64sBrta1vdI2bnkKVw",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAzvM2wrr8AAMPBrjuuvwAAw8GuO8PBrjvDwa47w8GuP66/rjuuv647w8GuO8PBrj+uu647rr+uO8PBw0Guv64/rruuO66/rj+uv647rruuOwAArj8AAK47rruuO667rj8AAK47rruuOwAArjsAAK4/AACuPwAArjsAAMNBAACuP647rjsAAK4/rjvDQQAArj+uO64/rjuuPwAArj8AAK4/rjuuPwAArjuuO647AACuP647rjuuP8NBrjuuP647rjsAAK4/rj/DQa4/rj+uP64/w0GuO65Drj/NRK4/zUSuO8NFAACuR667Ukiuu1JIrr/NSMPBuEauw65Hrr/NRK6/w0Wuw8NBrr/DQa67rjsAAK47rruuOwAAAACuuwAArrsAAK67AACuuwAArrsAAK6/rruuuwAAw8Guu66/rrvDwa6/rruuu8PBrr/DwcPBrr8AAMPBrr+uv66/rr/DwcPBrruuv66/rruuv66/w8Guu66/rr+uu66/w8Guu667rrvDwa67w8Guv66/rr+uv667rr+uv66/rr+uv667rruuu66/rruuu667rruuu667AACuv667rruuu667rruuuwAArruuu667rruuuwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": true,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "a7hyQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 303.45001220703125,
+			"y": 866.790008987427,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:pADZIyybqd9lClXM6Ymif",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAzvM2wrr8AAK6/AADDwa47w8EAAK7DrjvDwa47w8UAAMPBrjvDxQAArr+uO67DAACuw647rsOuO83EAACuwwAArr8AAK7DAADDwa47rrsAAMPBAADDwa47rrsAAK6/AACuuwAArr8AAAAArjuuvwAArr8AAK67AACuuwAArrsAAK67AACuuwAArrsAAK6/rjuuuwAArrsAAK67AACuuwAArrsAAK67AACuuwAArrsAAK67AACuuwAArrsAAK6/AACuuwAArr8AAK67AACuvwAArrsAAK6/AACuuwAArrsAAK67AACuuwAArr8AAK67AACuuwAArr8AAK67AACuvwAAw8EAAK67AACuvwAArr+uO667AACuvwAAAACuO66/AACuuwAArr8AAK67AACuuwAArrsAAK67rjuuv647rrsAAK67AACuvwAArruuO66/rjuuv647rruuO66/rjuuv647rrsAAK6/rjuuv647rr+uO667rj+uu647rr8AAAAArjsAAK4/rrsAAK67rjsAAK47rrsAAAAArj8AAK47AACuOwAArjsAAK47AACuOwAArj8AAK47AACuPwAArj8AAK4/AACuPwAArjsAAMNBrjvDQa47rj+uO647rj+uP8NBw0GuP64/w0HDQa5Drj/NRK4/zUTDQcNFw0GuQ8NBw0WuO81ErjuuQ647w0WuP65DrjvDQQAArkMAAMNFAAC4RgAAuEauu7hGrru4Rq67UkjDwbhGrru4RsPBw0Wuv7hGrrvDRa6/uEbDwbhGw8FIScPBUkiuv65Hrr+4Rq6/w0Wuu81Err/DRcPBrkOuu81ErruuQ667uEauu65DrrvDRa6/zUSuu7hGw8GuR66/uEauu7hGw8HNRK6/rkeuv81Err/DRcPBuEauv8NFrr+uQ66/rkOuu65Drr+uP667rj+uu647rruuOwAAAACuuwAArruuu667AACuu66/rrvDwa6/w8Guv67Drr/DxcPBzcTDwbjGrr+ux67DuMauv83IrrtSyMPBUsiuu83IrrvNyK6/zcSuu7jGrrtIya67SMkAAM3IAABSyAAAuMYAAK7HAABSyAAAzcQAALjGAACuw647rsOuO67Drjuuw64/rr+uO667AACuv647rrsAAK67AACuuwAAAACuOwAArjsAAK47",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aIycI",
+			"typeName": "shape"
+		},
+		{
+			"x": 525.1200866699219,
+			"y": 24.32250690460205,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:LTTGzyZuM9_Ansk2B8L1M",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 61.42000198364258,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 2.764734298766807,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Keys "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a16AX",
+			"typeName": "shape"
+		},
+		{
+			"x": 263.0482734969255,
+			"y": 2375.3761152996485,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:bQUjYMj5qfg3GAT8xwMsj",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1037.800048828125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "M:1 → Many to one"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tmultiple foreign keys belongs to single key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "M:M → Many to Many"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\ta table can have the multiple foreign keys and multiple primary keys"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t1   1"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "  1   2"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "  1   3"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t2   3"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t3   3"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "agjWf",
+			"typeName": "shape"
+		},
+		{
+			"editingShapeId": "shape:MEId4NtBOdCPVJH8gpKi_",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:MEId4NtBOdCPVJH8gpKi_"
+			],
+			"hoveredShapeId": "shape:Jd5yhPTcVcgrbE-meA3Ib",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 542.0100350036621,
+			"y": 1552.2300565338135,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Dw88OlR5qjQB8zr6wBjKS",
+			"type": "geo",
+			"props": {
+				"w": 341.58001708984375,
+				"h": 171.69003295898438,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "serif",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aWXGQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 159.45001220703125,
+			"y": 233.43002319335938,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:jANF3NJhTYYnOw3u8tNKj",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAABSP82wrj8AAMNBAADDRQAAw0WuO7hGrjuuR647w0muO81Irj9SSK4/zUiuO1JIrj+4Rq47uEauO7hGrjvNRAAAw0WuO65HrjuuQ647zUQAAM1EAACuQwAAzUQAAK5DrjuuQwAAzUQAAK4/AADNRAAArkMAAK5DAACuPwAArkOuO8NBAADDQQAArj8AAK4/AADDQQAArj8AAK4/AACuQwAArj8AAMNBAADDQQAAw0EAAK5DAADDQQAAw0EAAMNBrruuQwAAw0EAAK5DAADDQQAAw0EAAMNBrrvDQQAArkOuu64/AACuQ667rjsAAMNBrrvDQQAArkOuu8NBAADDQQAArkOuu65DrrvDQQAArkOuu65DrruuQ667zUSuu65DAADDQa67rj8AAMNBAADDQQAArj8AAMNBAADDQQAArj8AAMNBAADDQa67w0EAAMNBAADDQa67rkMAAK5DAADDQa67w0EAAK5DAACuPwAAw0EAAMNBAACuPwAAw0EAAK4/AACuOwAAw0EAAK4/AACuOwAAw0EAAMNBAACuPwAAw0EAAMNBAACuPwAAw0EAAMNBAACuPwAAw0Guu65DAACuPwAAw0EAAMNBAACuPwAArj8AAK4/AACuOwAAw0EAAK4/AACuPwAAw0EAAK4/AACuPwAAw0EAAMNBAACuPwAArj8AAMNBAACuPwAArj8AAMNBAACuPwAArj8AAMNBAACuOwAArj8AAK47AADDQQAArj8AAK47AACuPwAAw0EAAK47AACuPwAArjsAAMNBAADDQQAArj8AAMNBAADDQQAArj8AAK5DAADDQQAAw0EAAK4/rjvDQQAAw0EAAK47AACuQwAArj8AAK47AACuPwAArjsAAK4/AACuPwAArjsAAK4/rruuPwAArjsAAK4/AACuOwAArj8AAK4/rruuOwAAw0EAAK4/AACuPwAAw0EAAK4/rruuPwAArj8AAK47AACuOwAArjsAAK47rruuOwAArjuuu647AACuPwAArjsAAAAArruuOwAArjsAAK47AACuOwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "a6TSX",
+			"typeName": "shape"
+		},
+		{
+			"x": 453.2100524902344,
+			"y": 889.830048049927,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:oeYB9ycCzn1iVJ9Ng4ltN",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAABSP82wrjsAAMNBAACuQwAArj8AAK5DAADNRK67uEYAAM1EAADNRAAAuEYAAK5DAACuQwAArj8AAMNBAADDQQAArj8AAK4/AADDQQAAw0EAAK47AACuPwAAw0EAAK47AACuPwAArj8AAK47AACuOwAArj8AAK47AACuOwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aK1YQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 272.6391039485223,
+			"y": 2782.5898079925605,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:AcdWyMwRoNwnQzi60rVMO",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 221.17432856639493,
+					"y": 1.644954923053774
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "ahB22",
+			"typeName": "shape"
+		},
+		{
+			"x": 202.57240420081388,
+			"y": 2149.727865476635,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:LHNygPLbCFT5-WK9K0h27",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1066.60009765625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Association "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\trelationship between two or more tables"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t1:1  → one to one"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\tone primary in a table can be used as foreign key in another table"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t1:M  → one to many"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\tone primary key can have the multiple foreign keys "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "afcjf",
+			"typeName": "shape"
+		},
+		{
+			"x": 335.1300048828125,
+			"y": 906.1500581207279,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:p-N_SQmGMmeBYR6b4kgwV",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAA=",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aNSUB",
+			"typeName": "shape"
+		},
+		{
+			"x": 292.4099983825684,
+			"y": 851.4300285186769,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:p6lhAyfDF0_H88C_CwQVg",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAD2OiTAzUSuv8NFw8HDRa7Dw0XNxMNFw8HDQc3ErkOuv64/rruuP667AACuu647rruuOwAArjsAAA==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aRtGb",
+			"typeName": "shape"
+		},
+		{
+			"x": 333.6900276794434,
+			"y": 811.1100288238526,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:FhR2wzC55qR3uH1amlaW3",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAD2Os2wrkOuO8NBAADDQa47rj+uO64/AAAAAK47rjuuOwAArjsAAK47rruuO667rj+uuwAAAACuOw==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aSSc6",
+			"typeName": "shape"
+		},
+		{
+			"x": 189.2100067138672,
+			"y": 505.91256174469004,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:yxAB67Ahma307C4fbCFke",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 154.0600128173828,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "name roll_no"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "name email"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "name mobile"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aDCSj",
+			"typeName": "shape"
+		},
+		{
+			"x": 167.13002014160156,
+			"y": 872.8725866928103,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:L0muX90oFHTjbemmDRsWa",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 207.3400115966797,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no  course_id"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aHoaQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 273.50496525668086,
+			"y": 3373.2831451999305,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:yjJ8M-LDLAIfv_S0Aexjm",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1181.800048828125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no is alone enough to identify other attributes like name, age, email, mobile"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "then we can say the roll_no is function dependency"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "armoz",
+			"typeName": "shape"
+		},
+		{
+			"x": 193.19056538131628,
+			"y": 4285.892975514583,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:a6P_RM8qC1lrrwxstM-1r",
+			"type": "geo",
+			"props": {
+				"w": 713.3223598355121,
+				"h": 182.38791047504128,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "avK5f",
+			"typeName": "shape"
+		},
+		{
+			"x": 514.6500244140625,
+			"y": 876.3900456085207,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ldJ7nvigWVdgUkjh4b_3L",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAD2Os2wrjsAAK47rjuuOwAArj+uO647AACuP647rj+uO64/rj+uOwAArj+uO64/AAAAAK47rjsAAK47rjuuOwAAAACuO647AACuO647AACuO647AACuOwAArjsAAAAArjuuO647AACuOwAArjuuvwAAAACuO66/rjuuv647rr+uO667rj+uv64/w8EAAMPBrj+uu647rr+uP66/rjuuv647rruuO667AACuuwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aLBaQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 254.28612042599056,
+			"y": 3169.064733793691,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:hnm8876KUM0k7FFyPhqm8",
+			"type": "geo",
+			"props": {
+				"w": 665.3774325032759,
+				"h": 167.2389441317987,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "apfA6",
+			"typeName": "shape"
+		},
+		{
+			"x": 451.7700199890137,
+			"y": 1745.2725765762327,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:aMw0Aicti7yN47YpB7JaS",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 166.4650115966797,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "s_enrollement"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aZo8j",
+			"typeName": "shape"
+		},
+		{
+			"x": 242.49001547241215,
+			"y": 813.0300346221925,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:KqUFLJyTuZsEDZ4CW-sw2",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAABSP82wrkOuP8NBrj+uP8NBrj+uO64/rjuuO64/AACuO647AAAAAK47rjuuOwAArjuuuwAAAACuO667rjuuuwAArrsAAK67AACuu647rruuO667AAAAAK47rruuPwAArjsAAK47AACuPwAArjsAAK4/AADDQa47rjsAAK4/AACuPwAArjuuO647AACuO647AACuOwAArjsAAK47AACuOwAArjuuu647rrvDQQAArj+uu64/rr+uP667rj8AAMNBAAAAAK67rj8AAK47AACuOwAArjuuPwAArjsAAK47AACuO647rjsAAK4/AACuOwAArjuuu64/AACuO667rjsAAK4/rrsAAK6/rj8AAK47rrsAAK67rjuuu647rrsAAK67rjuuuwAA",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aQqSI",
+			"typeName": "shape"
+		},
+		{
+			"x": 947.1300663757324,
+			"y": 1838.0700647888182,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:tNsSkrzYkN4P8eOcJ2qPs",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 77.67010498046875,
+					"y": 2.730010986328125
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "serif",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "acBz3",
+			"typeName": "shape"
+		},
+		{
+			"x": 724.8900146484375,
+			"y": 268.95001220703125,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ixj06l0-lUgxHkuyg-e3j",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADkxJxFzcRSSM3ErkfNxLhGzcRSSK7Dw0Wuv8NFrr+uQ667rkOuu65DAACuP64/rkOuP64/w0HDQa5Dw0HDRa4/uEauQ81ErjvDRa4/zUjDQcNJrjtSSAAArkeuP1JIAADNRAAArkcAALhGrru4Rq67w0Wuv7hGrrvNRK6/rkeuw8NFrr/NRK7DzUTDwcNBw8GuP67Drj/Dwa47zcSuO67DrrvNxAAAw8Wuu7jGrsNSyK7DzcjNxK7HzcS4xq7Dw8XDxcPFw8Wuw67HzcTNxK67uMauv8PJrr+4yq47zciuO1LIw0Gux64/UsjDQbjGrj+ux65Dw8HDQVLIw0HNxMNB",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aBsNM",
+			"typeName": "shape"
+		},
+		{
+			"x": 456.09002685546875,
+			"y": 267.75000807189963,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:cNWYvD4sjX9XwRzN1NOb3",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAzvM2wrr+uO66/rj/DwcNBrr+uP66/rj+uu647rruuP66/rjuuu647rruuP66/AACuu647AACuP667AACuuwAArrsAAAAArjuuuwAAAACuO667rjsAAK47AACuOwAArrs=",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aF8bA",
+			"typeName": "shape"
+		},
+		{
+			"x": 333.69000289916994,
+			"y": 1788.150081878662,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NzeN5juC0wJxjqwZkRCJR",
+			"type": "geo",
+			"props": {
+				"w": 331.11004638671875,
+				"h": 152.49008178710938,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "serif",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aXWwU",
+			"typeName": "shape"
+		},
+		{
+			"x": 257.4722224998813,
+			"y": 2929.1286126090818,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:dQZkZR3eSZYvwVMrJ7YZl",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 243.4785276197075,
+					"y": -1.0316136270889729
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "mono",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "amPRQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 192.0900115966797,
+			"y": 909.0300602569582,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:-rHpx5plz9njPr1KDdw-a",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADDrXG8AACuuwAArruuO667rjsAAK4/AACuPwAArjsAAK4/AADDQQAArj8AAMNBAADDQa47rkOuO64/AADDQa47w0EAAMNBrjuuOwAAw0EAAK47AACuP647rj8AAK47AACuPwAArjsAAK47AACuOwAArjuuO647AACuOwAAAACuO647AACuOwAArjsAAK47AACuOwAArjsAAK4/AACuOwAArjsAAK4/AACuOwAArj8AAK4/AACuPwAArj8AAK4/AACuOwAArj8AAK4/AACuO647rj8AAK47AACuO647rjsAAK47AACuOwAArjsAAK47AAAAAK67rjsAAK4/AACuOwAArjsAAK47AACuOwAArjsAAK47AAA=",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aJa4Q",
+			"typeName": "shape"
+		},
+		{
+			"x": 361.2910907854134,
+			"y": 1804.9906621688278,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OZKvU11PTCewp42oXDmtU",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 560.7250366210938,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "s_id                           c_id                  s_id → foreign key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tc_id  → foreign key"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aajVj",
+			"typeName": "shape"
+		},
+		{
+			"x": 153.21000143432622,
+			"y": 1554.1500699615478,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NLI8kl1Dtnoyvn4Q9EPk1",
+			"type": "geo",
+			"props": {
+				"w": 343.5900115966797,
+				"h": 169.77001953125,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "serif",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aVUPF",
+			"typeName": "shape"
+		},
+		{
+			"x": 583.77001953125,
+			"y": 278.5500183105469,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:iTJuuu9VjpuCfoR3e1mQ1",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAFwBQ/zcSuP67DrkPNxMNBrsOuQ83ErkOuw65Dw8HDQcPBrkPDwcNBrr+uQ66/zUSuu8NBAADDQa67rkMAAMNBrjuuP8NBw0WuP8NBw0GuQ81Ew0XDQa5DrkPNRMNFrkPNRM1Ew0XDQc1Ew0HDQa4/w0GuO81Ew0GuQwAAuEauP7hGrjtSSK47w0UAAFJIAADNRK67rkfDwbhGw8HDRcPBw0XDwa5Dw8HDQa6/rj/Dwa47w8GuO8PBrjvDwQAArsMAAK7DAACuw667zcSuv8PFrrvNxK67uMauv8PFrr+4xq67uMauu7jGrr+uw667rsOuu67Drr+uw667rrvDwcPBrruuv8PBrr+uw66/rsOuu8PFrru4xq67w8UAALjGAAC4xgAAuMauO7jGw0Guw64/w8XDQcPFrkPNxMNBuMauR83IrkfDxbhG",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aAKQ6",
+			"typeName": "shape"
+		},
+		{
+			"x": 280.66862525055404,
+			"y": 2914.8538639545714,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:QNrHTZV3E8p98I3HFcWHv",
+			"type": "line",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"color": "black",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2Tz7": {
+						"id": "a2Tz7",
+						"index": "a2Tz7",
+						"x": -0.9758127855180874,
+						"y": 27.51788368193138
+					}
+				},
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "antAj",
+			"typeName": "shape"
+		},
+		{
+			"x": 236.9523315767678,
+			"y": 2864.061823221852,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:aFM_Sx1j9qpd-oAWFKewa",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 16,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "*"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "alX3z",
+			"typeName": "shape"
+		},
+		{
+			"x": 170.97000122070312,
+			"y": 775.9125036849978,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Dclj5WFm-BUVeBK0mqNH-",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 83.54500579833984,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "email"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "mobile"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aGHtz",
+			"typeName": "shape"
+		},
+		{
+			"x": 129.69000244140625,
+			"y": 676.7925055923463,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:A1GooCePTu5ZePj840Mcy",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1204.06005859375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "candidate key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\tit is a Minimal super key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\twhen a single attribute is enough to identify the records then we make that attribute as candidate key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aEN9b",
+			"typeName": "shape"
+		},
+		{
+			"x": 472.4100341796875,
+			"y": 267.9900207519531,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:zi54JU3uKUq60TCgvvjoi",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAzvM2wuMauP67Dw0HDxcNBUsiuQ1LIzUS4xsNBrseuQ67Dw0HDxcNBrr/DQcPBrjuuv64/rr+uP667rj+uu64/rruuP667rj+uu8NBAACuO667rj8AAMNBAACuOwAAw0EAAMNBAACuOwAAw0GuO8NBrjvNRMNBw0GuP8NBrjuuP8NBw0HNRMNBrkOuQ8NFrj+4Rq4/uEauP8NFrj/DRQAAuEauO65DrjuuQwAAzUQAAMNBrruuQwAAw0Guu81Err/NRK67w0Wuv81Ew8HDQa67rkOuw8NBrruuP8PBw0HDwa4/w8GuO67DrjvDwQAAw8GuP67DrjuuwwAArsOuO67DAADDwQAAzcQAAK7DAACuw667zcSuu8PFrrvNxK6/rsOuv8PFw8HDwa6/w8HDwa6/w8Guv66/AACuw667w8Guu67DAACuvwAAw8EAAK7DrjvDwa47rsOuP8PBrj+uw81Ew8XDRQ==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "a9Fgn",
+			"typeName": "shape"
+		},
+		{
+			"x": 678.2400517272949,
+			"y": 1783.2000696716307,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OSStnkJZ2j2uALjeApbrd",
+			"type": "geo",
+			"props": {
+				"w": 269.66998291015625,
+				"h": 112.98001098632812,
+				"geo": "ellipse",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "serif",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "abx8U",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:font": "mono",
+				"tldraw:geo": "rectangle"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1528.320068359375,
+				"h": 852.4800415039062
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.0416666269302368,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"cameraState": "idle",
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"x": 162.81000753784184,
+			"y": 775.5900321807862,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ACnrC_hX5XDplXIOFHsME",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAzvM2wAACuOwAArjsAAK47AACuOwAArjsAAK47AACuOwAArjsAAK4/AACuPwAArjsAAK47AACuOwAArjuuO647AACuO647rjsAAK47rjsAAAAArjsAAK47rjuuO647AACuP647rjsAAK47AACuPwAArjsAAK4/AACuPwAArj8AAK4/AACuPwAArjsAAK4/AACuOwAArj8AAK47rjuuOwAArjsAAK47rjuuOwAAAACuO647AACuOwAAAACuO64/AACuO647rj8AAAAArjuuOwAArjsAAK47AACuOwAArjuuO64/rjuuOwAArjsAAK47AACuOwAArj8AAK4/rjuuOwAArj8AAK47AACuP647rj8AAK47AACuOwAArjsAAK47AACuO647rjsAAK47AACuOwAArj8AAK47AACuOwAArj8AAK47AACuOwAArjsAAK47AACuO667rjsAAK47rruuOwAArjuuu647AACuP667rjsAAAAArruuPwAArjsAAAAArruuOwAArjsAAAAArruuOwAAAACuu647AACuO667AACuu647AACuO667AACuu647rruuOwAAAACuuwAArrsAAK67AACuuwAArruuu667AACuv667rr+uu667rruuuwAArruuv667rrsAAK67rruuvwAArr+uu667AACuuwAArr+uu667rruuuwAArr8AAK67AACuuwAArr8AAK67AACuuwAArrsAAK67AACuuwAAw8EAAK6/rjuuuwAAw8EAAMPBAACuuwAAw8GuO667AACuvwAAw8GuO667AACuuwAArr8AAK6/rjuuuwAArrsAAK67AACuuwAArruuO667AACuuwAArrsAAK6/rjuuvwAArrsAAK67AACuvwAArrsAAK67AACuuwAArrsAAK6/AACuvwAArruuOw==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "aP1Ff",
+			"typeName": "shape"
+		},
+		{
+			"x": 168.57000778198244,
+			"y": 1559.0325710830687,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vfo3IsRLGTGzUtydnZAFI",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 655.1500244140625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "s_id           name          email                c_id           name         fees"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aYTpr",
+			"typeName": "shape"
+		},
+		{
+			"x": 241.41317989581785,
+			"y": 2995.2106585815304,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:3BjAukxhS_C8nz-hTklRg",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1052.2000732421875,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Dependencies"
+								}
+							]
+						},
+						{
+							"type": "orderedList",
+							"attrs": {
+								"dir": "auto",
+								"start": 1,
+								"type": null
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "functional dependency"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\twhen a single key attribute is enough to identify the record "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tattributes from the table then we can say it is functional dependency"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ao2TI",
+			"typeName": "shape"
+		},
+		{
+			"x": 577.1787615419205,
+			"y": 4295.075070494274,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:T2-Xf0NGPfqnggpLscUwc",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 73,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "email"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "awISv",
+			"typeName": "shape"
+		},
+		{
+			"x": 208.7720609554624,
+			"y": 3779.0886332860155,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:MEId4NtBOdCPVJH8gpKi_",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1225,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "orderedList",
+							"attrs": {
+								"dir": "auto",
+								"start": 4,
+								"type": null
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Transitive dependency"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\twhen attribute B dependence on attribute A and attribute C dependes on attribute "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tB    A → B → C   A → C (indirect relation)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tA → emp_id (employees)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tB → project_id (employee_projects)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tC → project_name (projects_"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\twhen a non key attribute dependes on multiple key attributes then we can say"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tit is a multi valued dependency"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tmulti valued dependency can be resolved using 3NF"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "orderedList",
+							"attrs": {
+								"dir": "auto",
+								"start": 5,
+								"type": null
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Multi-Valued dependency"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tstudent → emails   sudent1 → email1"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t\t\t\t\t\tstudent1 → email2"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "auUEH",
+			"typeName": "shape"
+		},
+		{
+			"x": 138.3300018310547,
+			"y": 199.83001708984375,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:bVOH9XR-mxJeBwdV2uBgS",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAABSP82wrj8AAK5DAADDQQAArj8AAK5DAACuQwAArkOuu64/AACuQwAAw0EAAK4/AACuP667rj8AAK47AACuPwAArjsAAK47AACuP667rjsAAK4/AACuOwAArjsAAK4/AACuO647rj8AAK4/AACuPwAArj8AAMNBAACuOwAAw0EAAK4/rruuOwAAw0EAAK4/AACuPwAArj8AAK47AACuPwAArj+uu647AACuO667rj8AAK4/AACuOwAArjsAAK47rruuOwAArjsAAK47AACuOwAArjsAAK47AACuOwAArjsAAK4/rjuuOwAArjuuO64/AACuOwAAw0EAAK4/AACuPwAArj8AAMNBrjuuOwAArj8AAK4/AACuOwAArj8AAK47rruuOwAArjsAAK47AACuOwAArjsAAK47AACuOwAArjsAAA==",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "a53MI",
+			"typeName": "shape"
+		},
+		{
+			"x": 276.07325571412696,
+			"y": 4329.696947465287,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:g4uqi_y5wei7YP_TSaXjz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 389.8000183105469,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1               ravi@123"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1               r@gmail.com"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "ax3yX",
+			"typeName": "shape"
+		},
+		{
+			"x": 275.9073248380601,
+			"y": 3175.4891967356393,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:dDJQTx68TRXKn8K7uOr5H",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 548.2000122070312,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "roll_no    name   age   email   mobile"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aqUEH",
+			"typeName": "shape"
+		},
+		{
+			"x": 151.77000427246094,
+			"y": 164.63251972198486,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Yh-VxfDOuwDPdnxYl1Qka",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 561.280029296875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "super key"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\tit is combination of the one or more attributes"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2bNz",
+			"typeName": "shape"
+		},
+		{
+			"x": 164.25,
+			"y": 279.510009765625,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:zdwtjmSv0v6g32skS_FzS",
+			"type": "geo",
+			"props": {
+				"w": 806.31005859375,
+				"h": 199.52999877929688,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "serif",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a3v36",
+			"typeName": "shape"
+		}
+	]
+}
