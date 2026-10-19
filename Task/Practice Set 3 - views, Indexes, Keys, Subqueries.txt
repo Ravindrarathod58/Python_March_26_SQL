@@ -1,0 +1,493 @@
+
+   MySQL PRACTICE TASK 
+
+----------------------------------------------------------
+SAMPLE DATABASE SETUP (for Keys, Views, Indexes, Subqueries)
+----------------------------------------------------------
+
+CREATE DATABASE practice_db;
+USE practice_db;
+
+CREATE TABLE departments (
+    dept_id   INT PRIMARY KEY,
+    dept_name VARCHAR(50) NOT NULL,
+    location  VARCHAR(50)
+);
+
+INSERT INTO departments VALUES
+(1, 'HR', 'New York'),
+(2, 'IT', 'San Francisco'),
+(3, 'Sales', 'Chicago'),
+(4, 'Marketing', 'Boston'),
+(5, 'Finance', 'Seattle');
+
+CREATE TABLE employees (
+    emp_id     INT PRIMARY KEY,
+    emp_name   VARCHAR(50) NOT NULL,
+    dept_id    INT,
+    manager_id INT,
+    salary     DECIMAL(10,2),
+    hire_date  DATE,
+    email      VARCHAR(100) UNIQUE,
+    FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+);
+
+INSERT INTO employees VALUES
+(1, 'John Smith',      2, NULL, 75000, '2019-03-15', 'john.smith@corp.com'),
+(2, 'Emma Davis',      2, 1,    65000, '2020-06-01', 'emma.davis@corp.com'),
+(3, 'Michael Brown',   3, NULL, 60000, '2018-11-20', 'michael.brown@corp.com'),
+(4, 'Sarah Wilson',    3, 3,    55000, '2021-01-10', 'sarah.wilson@corp.com'),
+(5, 'David Lee',       1, NULL, 50000, '2017-05-30', 'david.lee@corp.com'),
+(6, 'Laura Taylor',    1, 5,    48000, '2022-02-14', 'laura.taylor@corp.com'),
+(7, 'James Anderson',  4, NULL, 62000, '2019-09-05', 'james.anderson@corp.com'),
+(8, 'Olivia Martinez', 4, 7,    58000, '2020-12-01', 'olivia.martinez@corp.com'),
+(9, 'Robert Thomas',   NULL, NULL, 45000, '2023-04-18', 'robert.thomas@corp.com'),
+(10,'Sophia White',    5, NULL, 70000, '2016-07-22', 'sophia.white@corp.com');
+
+CREATE TABLE projects (
+    project_id   INT PRIMARY KEY,
+    project_name VARCHAR(50),
+    dept_id      INT,
+    budget       DECIMAL(12,2),
+    FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+);
+
+INSERT INTO projects VALUES
+(101, 'Website Redesign',   2, 50000),
+(102, 'Mobile App',         2, 80000),
+(103, 'Sales Campaign',     3, 30000),
+(104, 'Ad Campaign',        4, 40000),
+(105, 'Recruitment Drive',  1, 20000),
+(106, 'Budget Planning',    5, 15000),
+(107, 'Cloud Migration',    NULL, 60000);
+
+CREATE TABLE employee_projects (
+    emp_id       INT,
+    project_id   INT,
+    hours_worked INT,
+    PRIMARY KEY (emp_id, project_id),
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id),
+    FOREIGN KEY (project_id) REFERENCES projects(project_id)
+);
+
+INSERT INTO employee_projects VALUES
+(1, 101, 120), (1, 102, 80), (2, 101, 100), (3, 103, 150),
+(4, 103, 90), (7, 104, 110), (8, 104, 95), (5, 105, 60), (10, 106, 70);
+
+CREATE TABLE customers (
+    customer_id   INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    city          VARCHAR(50)
+);
+
+INSERT INTO customers VALUES
+(201, 'Alpha Corp', 'New York'),
+(202, 'Beta Ltd',   'Chicago'),
+(203, 'Gamma Inc',  'Boston'),
+(204, 'Delta LLC',  'Seattle'),
+(205, 'Epsilon Co', 'Miami');
+
+CREATE TABLE orders (
+    order_id    INT PRIMARY KEY,
+    customer_id INT,
+    order_date  DATE,
+    amount      DECIMAL(10,2),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+INSERT INTO orders VALUES
+(301, 201, '2023-01-15', 2500),
+(302, 202, '2023-02-10', 1800),
+(303, 201, '2023-03-05', 3200),
+(304, 203, '2023-04-20', 1500),
+(305, 204, '2023-05-11', 2200);
+
+==========================================================
+KEYS
+==========================================================
+
+--- Conceptual / Identification ---
+
+1.  Define Primary Key and list two rules a column must satisfy to be 
+    used as one.
+2.  Define Foreign Key and explain what problem it solves between 
+    "employees" and "departments".
+3.  Define Candidate Key and identify a possible candidate key in the 
+    "employees" table other than emp_id.
+4.  Define Unique Key and explain the difference between a Unique Key 
+    and a Primary Key.
+5.  Define Composite Key and identify which table in the sample 
+    database already uses one.
+6.  Define Super Key and give an example of a super key in the 
+    "employees" table.
+7.  Define Alternate Key using the "employees" table as an example 
+    (a candidate key that was NOT chosen as the primary key).
+8.  Define Surrogate Key and explain whether emp_id is a surrogate 
+    key or a natural key.
+9.  Explain the difference between a Composite Key and a Compound Key 
+    (if any) with an example.
+10. Explain what a Self-Referencing Foreign Key is, using the 
+    manager_id column in "employees" as the example.
+
+--- Practical DDL with Keys ---
+
+11. Create a table "students" with student_id as PRIMARY KEY.
+12. Create a table "student_courses" with a COMPOSITE PRIMARY KEY on 
+    (student_id, course_id).
+13. Create a table "books" with isbn as PRIMARY KEY and a UNIQUE KEY 
+    on the "barcode" column.
+14. Alter the "employees" table to add a FOREIGN KEY constraint on 
+    dept_id referencing departments(dept_id), if not already present 
+    (name the constraint fk_emp_dept).
+15. Alter the "employees" table to DROP the foreign key constraint 
+    fk_emp_dept.
+16. Create a table "accounts" with account_no as PRIMARY KEY and add 
+    a CHECK constraint ensuring balance >= 0.
+17. Create a table "warehouse_stock" with a composite UNIQUE KEY on 
+    (product_id, warehouse_id) to prevent duplicate stock entries.
+18. Alter the "projects" table to add a new UNIQUE constraint on 
+    project_name.
+19. Create a table "returns" with a FOREIGN KEY referencing 
+    orders(order_id) that CASCADEs on DELETE.
+20. Create a table "employee_documents" with emp_id as a FOREIGN KEY 
+    referencing employees(emp_id) that SETS NULL on DELETE.
+21. Add a PRIMARY KEY to an existing table "temp_logs" (assume it 
+    currently has no primary key) on the log_id column.
+22. Create a table "audit_trail" with NO primary key at all, and 
+    explain (as a comment) two drawbacks of a table without a 
+    primary key.
+
+--- Applied Key Concepts on Sample Data ---
+
+23. Attempt to insert an employee with a duplicate email address and 
+    explain (as a comment) which constraint blocks it.
+24. Attempt to insert an employee with a dept_id that does not exist 
+    in "departments" and explain which constraint blocks it.
+25. Attempt to delete a department that still has employees assigned 
+    to it, and explain what happens under a default (RESTRICT) 
+    foreign key.
+26. Identify all foreign key relationships (parent/child table pairs) 
+    that exist across the sample database, and list them.
+27. Write a query using INFORMATION_SCHEMA to list all foreign keys 
+    defined on the "employees" table.
+28. Write a query using INFORMATION_SCHEMA to list the primary key 
+    column(s) of the "employee_projects" table.
+29. Explain why "employee_projects" needs a composite primary key 
+    instead of a single-column primary key.
+30. Explain (as a comment) the difference between ON DELETE CASCADE, 
+    ON DELETE SET NULL, and ON DELETE RESTRICT, using employees/
+    departments as the example relationship.
+
+==========================================================
+ NORMALIZATION 
+==========================================================
+
+--- Setup: Unnormalized sample table for this section ---
+
+CREATE TABLE unnormalized_orders (
+    order_id      INT,
+    customer_name VARCHAR(50),
+    customer_city VARCHAR(50),
+    products      VARCHAR(255),   -- e.g. 'Laptop,Mouse,Keyboard'
+    quantities    VARCHAR(255),   -- e.g. '1,2,1'
+    dept_name     VARCHAR(50),
+    dept_location VARCHAR(50),
+    order_date    DATE
+);
+
+INSERT INTO unnormalized_orders VALUES
+(1, 'Alpha Corp', 'New York', 'Laptop,Mouse',        '1,2',   'Sales', 'Chicago',   '2023-01-15'),
+(2, 'Beta Ltd',   'Chicago',  'Keyboard',             '3',     'Sales', 'Chicago',   '2023-02-10'),
+(3, 'Alpha Corp', 'New York', 'Monitor,Laptop,Mouse', '2,1,1', 'IT',    'San Francisco', '2023-03-05');
+
+---  Conceptual ---
+31. Explain what "Normalization" means and why it is used in database 
+    design.
+32. Explain the difference between Normalization and Denormalization, 
+    and give one real-world scenario where denormalization is preferred.
+33. Define Functional Dependency and give an example from the 
+    "employees" table (e.g. emp_id -> emp_name).
+34. Define Partial Dependency and explain why it matters for 2NF.
+35. Define Transitive Dependency and explain why it matters for 3NF.
+36. State the three conditions a table must meet to be in First 
+    Normal Form (1NF).
+37. State the conditions a table must meet to be in Second Normal 
+    Form (2NF).
+38. State the conditions a table must meet to be in Third Normal 
+    Form (3NF).
+39. Explain Boyce-Codd Normal Form (BCNF) and how it differs from 3NF.
+40. Explain what an "atomic value" means in the context of 1NF, using 
+    the "products" column of unnormalized_orders as a violating example.
+41. Explain what a "repeating group" is, using the products/quantities 
+    columns of unnormalized_orders as an example.
+42. List, in order, all the normal forms covered in this section 
+    (1NF -> 2NF -> 3NF -> BCNF) and briefly state what each one fixes.
+
+--- Applying Normalization ---
+43. Identify every 1NF violation present in the "unnormalized_orders" 
+    table.
+44. Convert "unnormalized_orders" into 1NF by creating a new table 
+    "orders_1nf" where each product/quantity pair for an order is its 
+    own row (write the CREATE TABLE and INSERT statements).
+45. After reaching 1NF, identify the primary key of "orders_1nf" and 
+    explain why a composite key is needed.
+46. Identify the partial dependency present in "orders_1nf" 
+    (e.g. customer_name/customer_city depending only on order_id, 
+    not on the full composite key).
+47. Convert "orders_1nf" into 2NF by splitting it into two tables: 
+    "orders_2nf" (order_id, customer_name, customer_city, dept_name, 
+    dept_location, order_date) and "order_items_2nf" (order_id, 
+    product_name, quantity). Write the CREATE TABLE statements.
+48. Identify the transitive dependency present in "orders_2nf" 
+    (dept_location depends on dept_name, which depends on order_id, 
+    not directly on order_id).
+49. Convert "orders_2nf" into 3NF by extracting department information 
+    into its own table "dept_lookup_3nf" (dept_name, dept_location) 
+    and referencing it from "orders_3nf" via dept_name. Write the 
+    CREATE TABLE statements.
+50. Write the final set of 3NF tables (orders_3nf, order_items_3nf, 
+    dept_lookup_3nf) with appropriate PRIMARY KEY and FOREIGN KEY 
+    constraints.
+51. Write a query that JOINs the final 3NF tables back together to 
+    reproduce the original "unnormalized_orders" view of the data.
+52. Explain (as a comment) how many tables were needed to go from the 
+    original unnormalized table to 3NF, and what redundancy was 
+    eliminated at each step.
+53. Explain whether the final 3NF design also satisfies BCNF, and why 
+    or why not.
+54. Explain one trade-off (cost) of normalizing this data to 3NF in 
+    terms of query complexity (more JOINs needed).
+
+--- Applied to the Main Sample Schema ---
+
+55. Explain why storing dept_name and dept_location directly inside 
+    the "employees" table (instead of a separate "departments" table 
+    with a dept_id foreign key) would violate normalization rules.
+56. Explain why "employee_projects" exists as a separate table instead 
+    of storing a comma-separated list of project_ids inside the 
+    "employees" table.
+57. Identify which normal form the current "employees", "departments", 
+    "projects", and "employee_projects" tables satisfy, and justify 
+    your answer.
+58. Propose a scenario where you might deliberately denormalize the 
+    "orders" table by adding a customer_name column directly to it, 
+    and explain the trade-off.
+59. Write a query that demonstrates data redundancy would occur if 
+    dept_location were duplicated into the "employees" table for 
+    every employee in the same department.
+60. Explain how proper normalization of the "employees"/"departments" 
+    tables prevents an "update anomaly" if a department relocates to 
+    a new city.
+
+==========================================================
+VIEWS 
+==========================================================
+
+--- Basic View Creation ---
+61. Create a simple view "vw_employee_basic" showing emp_name, salary, 
+    and hire_date from "employees".
+62. Create a view "vw_employee_dept" showing emp_name, dept_name, and 
+    location by joining "employees" and "departments".
+63. Create a view "vw_high_earners" showing employees with salary 
+    greater than 60000.
+64. Create a view "vw_project_summary" showing project_name, dept_name, 
+    and budget by joining "projects" and "departments".
+65. Create a view "vw_customer_orders" showing customer_name, order_id, 
+    order_date, and amount by joining "customers" and "orders".
+66. Query the view "vw_employee_dept" to retrieve only employees in 
+    the 'IT' department.
+67. Create a view "vw_employee_project_hours" showing emp_name, 
+    project_name, and hours_worked by joining employees, 
+    employee_projects, and projects.
+68. Show the underlying SQL definition of a view using 
+    SHOW CREATE VIEW.
+69. List all views that currently exist in the "practice_db" database 
+    using INFORMATION_SCHEMA.VIEWS.
+70. Drop the view "vw_high_earners".
+71. Create a view "vw_dept_employee_count" showing dept_name and the 
+    number of employees in each department (uses GROUP BY inside 
+    the view).
+72. Create a view "vw_dept_total_salary" showing dept_name and total 
+    salary expenditure per department.
+
+--- Updatable Views & WITH CHECK OPTION---
+73. Create a simple updatable view "vw_it_employees" showing all 
+    columns of employees where dept_id = 2.
+74. Through the view "vw_it_employees", UPDATE an employee's salary 
+    and verify the change is reflected in the base "employees" table.
+75. Through the view "vw_it_employees", INSERT a new employee record 
+    and verify it appears in the base "employees" table with dept_id = 2.
+76. Recreate "vw_it_employees" WITH CHECK OPTION, then attempt to 
+    INSERT a row with dept_id = 3 through it and explain what happens.
+77. Explain (as a comment) why a view containing a JOIN, GROUP BY, or 
+    aggregate function is generally NOT updatable.
+78. Attempt to UPDATE data through "vw_employee_dept" (which contains 
+    a JOIN) and explain the error or limitation encountered.
+79. Attempt to DELETE a row through "vw_it_employees" and verify the 
+    corresponding row is removed from "employees".
+80. Explain the difference between WITH CHECK OPTION and WITH LOCAL 
+    CHECK OPTION.
+
+--- Views with Aggregates, Filtering & Security ---
+81. Create a view "vw_top_projects" showing only projects with a 
+    budget greater than 40000.
+82. Create a view "vw_employee_public" that exposes only emp_name and 
+    dept_name (hiding salary) — to be used for restricting sensitive 
+    column access.
+83. Grant SELECT privilege on "vw_employee_public" to a user 
+    'guest_user' instead of granting access to the full "employees" 
+    table, and explain why this is a good security practice.
+84. Create a view "vw_order_summary" showing customer_name, total 
+    number of orders, and total amount spent (GROUP BY inside the view).
+85. Create a view "vw_dept_project_count" showing dept_name and the 
+    number of projects per department, including departments with 
+    zero projects (LEFT JOIN inside the view).
+86. Create a view "vw_manager_reports" showing manager_name and the 
+    count of employees reporting to them (self join inside the view).
+87. Alter an existing view "vw_employee_basic" (using CREATE OR 
+    REPLACE VIEW) to also include the dept_name column.
+88. Explain the difference between a VIEW and a normal TABLE in terms 
+    of storage.
+89. Explain what happens to a view if the underlying base table's 
+    column is dropped or renamed, and how to detect this issue.
+90. Create a view "vw_recent_orders" showing only orders placed in 
+    the last 90 days (relative to CURDATE()), to demonstrate a view 
+    with a dynamic WHERE condition.
+
+==========================================================
+ INDEXES 
+==========================================================
+
+--- Conceptual  ---
+91. Explain what an index is and why it improves SELECT query 
+    performance.
+92. Explain the trade-off of adding indexes in terms of INSERT/UPDATE/
+    DELETE performance and storage space.
+93. Explain the difference between a Clustered Index and a 
+    Non-Clustered (Secondary) Index in InnoDB.
+94. Explain why the PRIMARY KEY in InnoDB is automatically the 
+    clustered index.
+95. Explain the difference between a Unique Index and a regular 
+    (non-unique) Index.
+96. Explain what a Composite (multi-column) Index is and when it is 
+    useful.
+97. Explain the "leftmost prefix rule" for composite indexes with an 
+    example using (dept_id, salary).
+98. Explain what a Full-Text Index is and when you would use one 
+    instead of LIKE '%...%'.
+
+--- Practical Index Creation ---
+99.  Create an index "idx_emp_name" on the emp_name column of 
+     "employees".
+100. Create a UNIQUE index "idx_emp_email" on the email column of 
+     "employees" (if not already unique via constraint).
+101. Create a composite index "idx_dept_salary" on (dept_id, salary) 
+     in the "employees" table.
+102. Create an index "idx_order_date" on the order_date column of 
+     "orders" to speed up date-range searches.
+103. Create an index while creating a new table "products" — define 
+     an index on the "category" column directly inside the CREATE 
+     TABLE statement.
+104. Show all indexes currently defined on the "employees" table using 
+     SHOW INDEX.
+105. Drop the index "idx_emp_name" from the "employees" table.
+106. Create a composite index "idx_cust_date" on (customer_id, 
+     order_date) in the "orders" table, and explain which queries 
+     would benefit from it.
+107. Create a FULL-TEXT index on the project_name column of "projects" 
+     and use MATCH() ... AGAINST() to search it.
+108. Create an index "idx_project_budget" on the budget column of 
+     "projects" and use EXPLAIN to confirm it is used in a query 
+     filtering budget > 40000.
+109. Attempt to create a duplicate index with the same definition as 
+     an existing one and explain what MySQL does.
+110. Rename an existing index rename "idx_order_date" to 
+     "idx_orders_order_date".
+111. Create an index on a computed/derived expression, e.g. an index 
+     on YEAR(order_date)
+112. Explain (as a comment) why creating an index on the emp_id 
+     primary key column is unnecessary (it already has one implicitly).
+
+==========================================================
+SUBQUERIES
+==========================================================
+
+--- Single-Row Subqueries ---
+113. Retrieve the employee(s) with the highest salary using a subquery 
+     in the WHERE clause with MAX().
+114. Retrieve the employee(s) with the lowest salary using a subquery 
+     with MIN().
+115. Retrieve all employees whose salary is greater than the average 
+     salary of all employees (subquery with AVG()).
+116. Retrieve the department name where employee 'John Smith' works, 
+     using a subquery instead of a JOIN.
+117. Retrieve all projects whose budget is greater than the budget of 
+     project 'Sales Campaign' (single-row subquery comparison).
+118. Retrieve the customer who placed the highest single order amount, 
+     using a subquery.
+119. Retrieve all employees hired before the employee with the earliest 
+     hire_date in the 'IT' department (subquery with MIN() and a 
+     WHERE filter).
+120. Retrieve the department with the highest total salary expenditure 
+     using a subquery with SUM() and GROUP BY inside it.
+
+--- Multi-Row Subqueries: IN, ANY, ALL ---
+121. Retrieve all employees who work in a department located in 
+     'Chicago' or 'Boston' using a subquery with the IN operator.
+122. Retrieve all employees who are NOT assigned to any project using 
+     a subquery with NOT IN on employee_projects.
+123. Retrieve all customers who have placed at least one order using 
+     a subquery with IN on the orders table.
+124. Retrieve all employees whose salary is greater than ANY employee's 
+     salary in the 'HR' department (subquery with the ANY operator).
+125. Retrieve all employees whose salary is greater than ALL employees' 
+     salaries in the 'HR' department (subquery with the ALL operator).
+126. Retrieve all departments that have at least one project with a 
+     budget over 40000 using a subquery with IN.
+127. Retrieve all projects that have NO employees assigned to them 
+     using a subquery with NOT IN on employee_projects.
+128. Retrieve all employees whose dept_id matches any department that 
+     has more than one project (subquery with IN + GROUP BY + HAVING).
+
+--- Correlated Subqueries ---
+129. Retrieve all employees who earn more than the average salary of 
+     their OWN department using a correlated subquery.
+130. Retrieve the employee with the highest salary IN EACH department 
+     using a correlated subquery.
+131. Retrieve all customers whose total order amount is above the 
+     average total order amount across all customers, using a 
+     correlated subquery.
+132. Retrieve each project along with a flag indicating whether it has 
+     more than 100 total hours logged, using a correlated subquery in 
+     the SELECT clause.
+133. Retrieve all employees who have worked on more than one project 
+     using a correlated subquery with COUNT().
+134. Retrieve all departments where the number of employees is greater 
+     than the average number of employees per department (correlated 
+     subquery with COUNT() and AVG()).
+
+--- EXISTS / NOT EXISTS ---
+135. Retrieve all employees who are assigned to at least one project 
+     using EXISTS with a correlated subquery on employee_projects.
+136. Retrieve all employees who are NOT assigned to any project using 
+     NOT EXISTS.
+137. Retrieve all customers who have never placed an order using 
+     NOT EXISTS on the orders table.
+138. Retrieve all departments that have at least one employee earning 
+     more than 60000 using EXISTS.
+
+--- Subqueries in SELECT and FROM Clauses  ---
+139. Retrieve emp_name, salary, and the company-wide average salary 
+     (as a constant column) using a scalar subquery in the SELECT 
+     clause.
+140. Retrieve dept_name along with the difference between each 
+     department's total salary and the overall average departmental 
+     total salary, using a subquery in the SELECT clause.
+141. Retrieve the top 3 highest-paid employees per department using a 
+     subquery in the FROM clause (derived table) combined with a 
+     self join or ranking logic.
+142. Rewrite Question 123 (employees earning more than the average 
+     salary) using a derived table in the FROM clause instead of a 
+     WHERE subquery, and compare the two approaches (as a comment) 
+     in terms of readability and performance.
+
