@@ -1261,9 +1261,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 7.328478907273131,
-			"y": -3912.012188612906,
-			"z": 0.809474445289369,
+			"x": 3586.9426347630815,
+			"y": 511.38697792336063,
+			"z": 0.12389007498824545,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1676,12 +1676,10 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:VCPwc6KjLP_tD2R6yf6Sf",
+			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:VCPwc6KjLP_tD2R6yf6Sf"
-			],
-			"hoveredShapeId": "shape:VCPwc6KjLP_tD2R6yf6Sf",
+			"selectedShapeIds": [],
+			"hoveredShapeId": "shape:wsWaQtC_Ll0g7WIr-zVNZ",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -2100,7 +2098,7 @@
 							"content": [
 								{
 									"type": "text",
-									"text": "subqueries are the quries written inside the another query or we can say nested query"
+									"text": "subqueries are the queries written inside the another query or we can say nested query"
 								}
 							]
 						},
@@ -2887,10 +2885,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:font": "mono",
-				"tldraw:geo": "ellipse"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -2922,7 +2917,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 1.25,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": null,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
